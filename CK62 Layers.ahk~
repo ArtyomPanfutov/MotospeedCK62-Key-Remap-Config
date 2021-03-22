@@ -3,8 +3,8 @@ CapsLock & k::Up
 CapsLock & j::Down
 CapsLock & l::Left
 CapsLock & h::Right
-AppsKey & 6::Home
-AppsKey & 4::End
+CapsLock & RShift & ^::Home
+CapsLock & RShift & $::End
 CapsLock & ,::Delete
 CapsLock & u::PgUp
 CapsLock & d::PgDn
