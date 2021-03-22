@@ -1,13 +1,13 @@
 SetCapsLockState, AlwaysOff
-CapsLock & /::Up
-CapsLock & SC15D::Down
-CapsLock & SC138::Left
-CapsLock & SC11D::Right
-CapsLock & l::Home
-CapsLock & .::End
+CapsLock & k::Up
+CapsLock & j::Down
+CapsLock & l::Left
+CapsLock & h::Right
+CapsLock & RShift & ^::Home
+CapsLock & RShift & $::End
 CapsLock & ,::Delete
-CapsLock & `;::PgUp
-CapsLock & '::PgDn
+CapsLock & u::PgUp
+CapsLock & d::PgDn
 CapsLock & Esc::
 if GetKeyState("Shift")
 	Send {~}
