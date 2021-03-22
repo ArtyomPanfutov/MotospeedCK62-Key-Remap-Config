@@ -96,7 +96,7 @@
                                 "conditions": [
                                   {
                                     "type": "variable_if",
-                                    "name": "caps_lock pressed",
+                                    "name": "caps_lock and left shift pressed",
                                     "value": 1
                                   }
                                 ]
@@ -114,7 +114,7 @@
                                 "to": [
                                   {
                                     "set_variable": {
-                                      "name": "caps_lock pressed",
+                                      "name": "caps_lock and left shift pressed",
                                       "value": 1
                                     }
                                   }
@@ -127,7 +127,7 @@
                                 "to_after_key_up": [
                                   {
                                     "set_variable": {
-                                      "name": "caps_lock pressed",
+                                      "name": "caps_lock and left shift pressed",
                                       "value": 0
                                     }
                                   }
@@ -196,7 +196,7 @@
                         ]
                     },
                     {
-                        "description": "Caps lock + right shift + 4/6 to home/end",
+                        "description": "Caps lock + right shift + f4/f6 to home/end",
                         "manipulators": [
                             {
                                 "type": "basic",
@@ -216,7 +216,7 @@
                                 "conditions": [
                                   {
                                     "type": "variable_if",
-                                    "name": "caps_lock and shift pressed",
+                                    "name": "application pressed",
                                     "value": 1
                                   }
                                 ]
@@ -239,7 +239,7 @@
                                 "conditions": [
                                   {
                                     "type": "variable_if",
-                                    "name": "caps_lock and shift pressed",
+                                    "name": "application pressed",
                                     "value": 1
                                   }
                                 ]
@@ -247,30 +247,30 @@
                             {
                                 "type": "basic",
                                 "from": {
-                                  "key_code": "caps_lock",
+                                  "key_code": "application",
                                   "modifiers": {
-                                    "mandatory": [
-                                      "right_shift"
+                                    "optional": [
+                                      "any"
                                     ]
                                   }
                                 },
                                 "to": [
                                   {
                                     "set_variable": {
-                                      "name": "caps_lock and shift pressed",
+                                      "name": "application pressed",
                                       "value": 1
                                     }
                                   }
                                 ],
                                 "to_if_alone": [
                                     {
-                                     "key_code": "caps_lock"
+                                     "key_code": "application"
                                     }
                                 ],
                                 "to_after_key_up": [
                                   {
                                     "set_variable": {
-                                      "name": "caps_lock and shift pressed",
+                                      "name": "application pressed",
                                       "value": 0
                                     }
                                   }
