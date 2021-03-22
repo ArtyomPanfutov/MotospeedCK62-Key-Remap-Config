@@ -16,7 +16,210 @@
                 },
                 "rules": [
                     {
-                        "description": "CAPS LOCK + u/d/H/I to page down/page up",
+                        "description": "Caps lock + Left Shift + Esc to ~",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "escape",
+                                  "modifiers": {
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "key_code": "grave_accent_and_tilde"
+                                  }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "variable_if",
+                                    "name": "caps_lock pressed",
+                                    "value": 1
+                                  }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "caps_lock",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "left_shift"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "set_variable": {
+                                      "name": "caps_lock pressed",
+                                      "value": 1
+                                    }
+                                  }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                     "key_code": "caps_lock"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                  {
+                                    "set_variable": {
+                                      "name": "caps_lock pressed",
+                                      "value": 0
+                                    }
+                                  }
+                                ]
+                              }
+                        ]
+                    },
+                    {
+                        "description": "Caps lock + Esc to `",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "escape",
+                                  "modifiers": {
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "key_code": "grave_accent_and_tilde"
+                                  }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "variable_if",
+                                    "name": "caps_lock pressed",
+                                    "value": 1
+                                  }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "caps_lock",
+                                  "modifiers": {
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "set_variable": {
+                                      "name": "caps_lock pressed",
+                                      "value": 1
+                                    }
+                                  }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                     "key_code": "caps_lock"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                  {
+                                    "set_variable": {
+                                      "name": "caps_lock pressed",
+                                      "value": 0
+                                    }
+                                  }
+                                ]
+                              }
+                        ]
+                    },
+                    {
+                        "description": "Caps lock + right shift + 4/6 to home/end",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "4",
+                                  "modifiers": {
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "key_code": "end"
+                                  }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "variable_if",
+                                    "name": "caps_lock and shift pressed",
+                                    "value": 1
+                                  }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "6",
+                                  "modifiers": {
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "key_code": "home"
+                                  }
+                                ],
+                                "conditions": [
+                                  {
+                                    "type": "variable_if",
+                                    "name": "caps_lock and shift pressed",
+                                    "value": 1
+                                  }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "caps_lock",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "right_shift"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "set_variable": {
+                                      "name": "caps_lock and shift pressed",
+                                      "value": 1
+                                    }
+                                  }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                     "key_code": "caps_lock"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                  {
+                                    "set_variable": {
+                                      "name": "caps_lock and shift pressed",
+                                      "value": 0
+                                    }
+                                  }
+                                ]
+                              }
+                        ]
+                    },
+                    {
+                        "description": "CAPS LOCK + u/d to page down/page up",
                         "manipulators": [
                             {
                                 "type": "basic",
