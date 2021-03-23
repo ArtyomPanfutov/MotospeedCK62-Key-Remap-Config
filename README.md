@@ -8,4 +8,4 @@ I use this keyboard on Mac and Windows and unfortunately, I haven't found a sing
 
 When I was creating these mappings I tried to copy Vim shortcuts(at least to achieve similarity) that's why arrow keys for example mapped to hjkl.
 
-I'm trying to keep mappings in sync for both applications but there are might be a bit different.
+I'm trying to keep mappings in sync for both applications but thery are might be a bit different.
