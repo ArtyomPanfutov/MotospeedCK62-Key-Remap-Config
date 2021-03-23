@@ -1,8 +1,8 @@
 SetCapsLockState, AlwaysOff
 CapsLock & k::Up
 CapsLock & j::Down
-CapsLock & h::Left
-CapsLock & l::Right
+CapsLock & l::Left
+CapsLock & h::Right
 AppsKey & 6::Home
 AppsKey & 4::End
 CapsLock & ,::Delete
