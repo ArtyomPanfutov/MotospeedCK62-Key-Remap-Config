@@ -1,4 +1,4 @@
-# Key Remap for keyboard Motospeed CK62
+# Key Remap for the keyboard Motospeed CK62
 
 When I bought this keyboard I wasn't happy about its layer switching implementation, so I decided to make my own key binding.
 
